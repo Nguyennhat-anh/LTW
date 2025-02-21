@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web Của Nhóm 1</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            height: 154px;
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            padding: 8px 0px;
+        }
+
+        .navbar a {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            margin: 0 15px;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 700;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .navbar-item {
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .navbar .navbar-item:hover {
+            background-color: aqua;
+        }
+
+        .navbar .navbar-item:hover a {
+            color: #35424a;
+
+        }
+
+        .container {
+            text-align: center;
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+            background: #ffffff;
+        }
+
+        .form-group {
+            margin-top: 10px;
+        }
+
+        .form-control {
+            width: 100%;
+            height: 46px;
+            border-radius: 5px;
+            border: #bdc4cf solid 1px;
+        }
+
+        .btn {
+            width: 100%;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #35424a;
+            color: #ffffff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        table {
+            width: 99%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #1b4655;
+            color: white;
+        }
+
+        .actions {
+            display: flex;
+            gap: 10px;
+        }
+
+        .actions a {
+            text-decoration: none;
+            padding: 5px 10px;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .view {
+            background-color: #007bff;
+        }
+
+        .edit {
+            background-color: #ffc107;
+        }
+
+        .delete {
+            background-color: #dc3545;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 style="font-weight: bold;">Trang Web Của Nhóm 1</h1>
+        <div class="navbar row-cols-4">
+            <div class="navbar-item"><a href="./home.html">Trang chủ</a></div>
+            <div class="navbar-item"><a href="./sanpham.html">Sản phẩm</a></div>
+            <div class="navbar-item"><a href="admin.html">Admin</a></div>
+            <div class="navbar-item"><a href="dangnhap.html">Đăng nhập</a></div>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2 style="font-weight: bold; margin-bottom: 20px;">Danh sách sản phẩm</h2>
+        <table>
+            <thead>
+                <tr class="product">
+                    <th>
+                        <p style="margin: 3px;">Tên sản phẩm
+                            <i class="fa-solid fa-chevron-down" style="font-size: 12px;"></i>
+                        </p>
+
+                    </th>
+
+                    <th>
+                        <p style="margin: 3px;">Người phụ trách
+                            <i class="fa-solid fa-chevron-down" style="font-size: 12px;"></i>
+                        </p>
+                    </th>
+                    <th>
+                        <p style="margin: 3px;">Mã
+                            <i class="fa-solid fa-chevron-down" style="font-size: 12px;"></i>
+                        </p>
+                    </th>
+                    <th>
+                        <p style="margin: 3px;">Giá sản phẩm
+                            <i class="fa-solid fa-chevron-down" style="font-size: 12px;"></i>
+                        </p>
+                    </th>
+                    <th>
+                        <p style="margin: 3px;">Số lượng
+                            <i class="fa-solid fa-chevron-down" style="font-size: 12px;"></i>
+                        </p>
+                    </th>
+                    <th>
+                        <p style="margin: 3px;">Khuyến Mãi
+                            <i class="fa-solid fa-chevron-down" style="font-size: 12px;"></i>
+                        </p>
+                    </th>
+                    <th>
+                        <p style="margin: 3px;">Tác vụ
+                            <i class="fa-solid fa-chevron-down" style="font-size: 12px;"></i>
+                        </p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Áo phông trắng</td>
+                    <td>Nhật Anh</td>
+                    <td>001</td>
+                    <td>100.000 VND </td>
+                    <td>80 chiếc </td>
+                    <td>15%</td>
+                    <td class="actions">
+                        <a href="#" class="view">👁 Xem</a>
+                        <a href="#" class="edit">✏ Sửa</a>
+                        <a href="#" class="delete">🗑 Xóa</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Áo khoác</td>
+                    <td>Dương Hiếu</td>
+                    <td>002</td>
+                    <td>120.000 VND</td>
+                    <td>90 chiếc </td>
+                    <td>10%</td>
+                    <td class="actions">
+                        <a href="#" class="view">👁 Xem</a>
+                        <a href="#" class="edit">✏ Sửa</a>
+                        <a href="#" class="delete">🗑 Xóa</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Áo hoodie</td>
+                    <td>Hữu Thắng </td>
+                    <td>003</td>
+                    <td>250.000 VND </td>
+                    <td>60 chiếc </td>
+                    <td>20%</td>
+                    <td class="actions">
+                        <a href="#" class="view">👁 Xem</a>
+                        <a href="#" class="edit">✏ Sửa</a>
+                        <a href="#" class="delete">🗑 Xóa</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Trang Web Của Nhóm 1</p>
+    </footer>
+</body>
+
+</html>

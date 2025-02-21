@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Sản Phẩm</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .product {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            text-align: center;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        .product img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .product h3 {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        .product p {
+            color: #e74c3c;
+            font-weight: bold;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Sản phẩm</h1>
+        <div class="product-grid">
+            <div class="product">
+                <img src="IMG_2598.png" alt="Sản phẩm 1">
+                <h3>Jeans</h3>
+                <p>$40.00</p>
+            </div>
+            <div class="product">
+                <img src="IMG_2600.jpeg" alt="Sản phẩm 2">
+                <h3>Short sleeve shirt</h3>
+                <p>$35.00</p>
+            </div>
+            <div class="product">
+                <img src="IMG_2601.jpeg" alt="Sản phẩm 3">
+                <h3>Double Yellow Shirt</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product">
+                <img src="IMG_2602.jpeg" alt="Sản phẩm 4">
+                <h3>Shirt</h3>
+                <p>$32.00</p>
+            </div>
+            <div class="product">
+                <img src="IMG_2603.jpeg" alt="Sản phẩm 5">
+                <h3>Shirt</h3>
+                <p>$60.00</p>
+            </div>
+            <div class="product">
+                <img src="IMG_2604.jpeg" alt="Sản phẩm 6">
+                <h3>Shirt</h3>
+                <p>$40.00</p>
+            </div>
+            <div class="product">
+                <img src="IMG_2605.jpeg" alt="Sản phẩm 7">
+                <h3>Hat</h3>
+                <p>$19.00</p>
+            </div>
+            <div class="product">
+                <img src="IMG_2606.jpeg" alt="Sản phẩm 8">
+                <h3>AF1 Shoes</h3>
+                <p>$30.00</p>
+            </div>
+        </div>
+    </div>
+</body>

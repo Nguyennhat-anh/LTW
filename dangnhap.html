@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web Của Nhóm 1</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            height: 154px;
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            padding: 8px 0px;
+        }
+
+        .navbar a {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            margin: 0 15px;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 700;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .navbar-item {
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .navbar .navbar-item:hover {
+            background-color: aqua;
+        }
+
+        .navbar .navbar-item:hover a {
+            color: #35424a;
+
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            /* padding: 20px 20px 5px 20px; */
+            background: #ffffff;
+            display: flex;
+            align-items: center;
+        }
+
+        .container-left {
+            width: 50%;
+        }
+
+        .container-left img {
+            width: 100%;
+        }
+
+        .container-right {
+            padding: 20px;
+            width: 40%;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-top: 10px;
+        }
+
+        .form-control {
+            width: 100%;
+            height: 46px;
+            border-radius: 5px;
+            border: #bdc4cf solid 1px;
+        }
+
+        .btn {
+            width: 100%;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #35424a;
+            color: #ffffff;
+            width: 100%;
+            /* position: absolute;
+            bottom: 0; */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 style="font-weight: bold;">Trang Web Của Nhóm 1</h1>
+        <div class="navbar row-cols-4">
+            <div class="navbar-item"><a href="./home.html">Trang chủ</a></div>
+            <div class="navbar-item"><a href="./sanpham.html">Sản phẩm</a></div>
+            <div class="navbar-item"><a href="admin.html">Admin</a></div>
+            <div class="navbar-item"><a href="dangnhap.html">Đăng nhập</a></div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="container-left">
+            <img src="./img/images (1).jpg " alt="">
+        </div>
+        <div class="container-right">
+            <h2 style="font-weight: bold;">Account login</h2>
+            <p>If you are already a member you can login with your email address and password.</p>
+            <form action="">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input id="email" class="form-control" type="email" placeholder="Nhap email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input id="password" class="form-control" type="password" placeholder="Nhap password">
+                </div>
+                <input id="remeber" type="checkbox">
+                <label for="remeber" style="margin-left: 10px;">Remember me</label>
+                <button class="btn btn-primary" style="padding: 15px; font-size:15px">Register Account</button>
+            </form>
+            <p style="text-align:center; margin-top: 20px;">Don't have an account ? <a href="">Sign up here</a></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Trang Web Của Nhóm 1</p>
+    </footer>
+</body>
+
+</html>

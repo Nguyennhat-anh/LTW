@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web Của Nhóm 1</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            height: 154px;
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            padding: 8px 0px;
+        }
+
+        .navbar a {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            margin: 0 15px;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 700;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .navbar-item {
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .navbar .navbar-item:hover {
+            background-color: aqua;
+        }
+
+        .navbar .navbar-item:hover a {
+            color: #35424a;
+
+        }
+
+
+
+        /* container */
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+            background: #ffffff;
+        }
+
+        .container h2 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+
+        .list-card {
+            display: flex;
+        }
+
+        .card {
+            padding: 12px;
+            border: none;
+        }
+
+        .card img {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .img-hd {
+            overflow: hidden;
+        }
+
+        .card img:hover {
+            transform: scale(1.1);
+        }
+
+        .card-body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding: 0;
+            margin-top: 15px;
+        }
+
+        .card-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0px;
+        }
+
+        /* list */
+
+        .list-title {
+            margin-top: 60px;
+            display: flex;
+        }
+
+
+
+        .list-right {
+            padding: 0;
+            overflow: hidden;
+
+        }
+
+        .list-right img {
+            width: 100%;
+            height: 410px;
+            padding: 10px;
+            position: absolute;
+        }
+
+        .list-dec {
+            position: absolute;
+            top: 50%;
+            right: 40px;
+            transform: translateY(-50%);
+            font-weight: bold;
+        }
+
+        .list-left {
+            height: 410px;
+            padding: 0px;
+            overflow: hidden;
+        }
+
+        .list-left img {
+            width: 100%;
+            padding: 10px;
+            height: 50%;
+        }
+
+        .form-group {
+            margin-top: 10px;
+        }
+
+        .form-control {
+            width: 100%;
+            height: 46px;
+            border-radius: 5px;
+            border: #bdc4cf solid 1px;
+        }
+
+        .btn {
+            width: 100%;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #35424a;
+            color: #ffffff;
+            position: absolute;
+            width: 100%;
+            /* bottom: 0; */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 style="font-weight: bold;">Trang Web Của Nhóm 1</h1>
+        <div class="navbar row-cols-4">
+            <div class="navbar-item"><a href="./home.html">Trang chủ</a></div>
+            <div class="navbar-item"><a href="./sanpham.html">Sản phẩm</a></div>
+            <div class="navbar-item"><a href="admin.html">Admin</a></div>
+            <div class="navbar-item"><a href="dangnhap.html">Đăng nhập</a></div>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>Sản phẩm</h2>
+        <div class="list-card row-cols-4">
+            <div class="card">
+                <div class="img-hd"><img src="./img/an1.jpg" alt="" class="card-img-top"></div>
+                <div class="card-body">
+                    <h5 class="card-title">Áo phông trắng</h5>
+                    <p class="card-text">$ 40.00</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img-hd"><img src="./img/anh2.jpg" alt="" class="card-img-top"></div>
+                <div class="card-body">
+                    <h5 class="card-title">Áo khoác</h5>
+                    <p class="card-text">$ 35.00</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img-hd"><img src="./img/anh3.jpg" alt="" class="card-img-top"></div>
+                <div class="card-body">
+                    <h5 class="card-title">Áo in chữ</h5>
+                    <p class="card-text">$ 43.00</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img-hd"><img src="./img/anh4.jpg" alt="" class="card-img-top"></div>
+                <div class="card-body">
+                    <h5 class="card-title">Áo hoodie</h5>
+                    <p class="card-text">$ 32.00</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="list-title">
+            <div class="list-right col-7">
+                <img src="./img/collection-item1.jpg" alt="">
+                <h1 class="list-dec">Street Wear</h1>
+            </div>
+            <div class="list-left col-5">
+                <img src="./img/images (2).jpg" alt="">
+                <img src="./img/AMERICAN100X-IMAGE.jpg" alt="">
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Trang Web Của Nhóm 1</p>
+    </footer>
+</body>
+
+</html>
